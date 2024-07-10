@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: "ComicNeue-BoldItalic";
+src: url("ComicNeue-BoldItalic.ttf"), format("truetype");
+}
+
+:root {
+    --font: "ComicNeue-BoldItalic";
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+header {
+    text-align: center;
+}
+
+header h1 {
+    text-transform: capitalize;
+}
+
+section.normal {
+
+}
+
+section.imagen {
+    background-color: black;
+}
+
+section p {
+    font-family: var(--font);
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
