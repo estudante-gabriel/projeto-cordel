@@ -16,18 +16,88 @@ src: url("ComicNeue-BoldItalic.ttf"), format("truetype");
 
 header {
     text-align: center;
+    background-color: black;
+    color: white;
+    padding: 70px;
 }
 
-header h1 {
-    text-transform: capitalize;
+header > h1 {
+    font-size: 40px;
+    font-variant: small-caps;
+}
+
+header > p {
+    font-size: 40px;
+}
+
+header a {
+    text-decoration: none;
+    color: azure;
+}
+
+header a:hover {
+    background-color: aliceblue;
+    color: black;
+    font-weight: bold;
+
+}
+
+section {
+    padding: 25px;
+    font-size: 30px;
+    line-height: 2em;
+}
+
+section p {
+    padding-bottom: 10px;
 }
 
 section.normal {
 
 }
 
-section.imagen {
+nav {
     background-color: black;
+    padding: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    padding-bottom: 5px;
+}
+
+nav a:hover {
+    color: black;
+    background-color: white;
+    transition-duration: 0.2s;
+}
+
+section.imagen-1 {
+    background-color: black;
+    background-image: url("../imagens/background001.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    color: aliceblue;
+    text-shadow: 4px 3px 0px rgba(0, 0, 0, 0.308);
+}
+
+section p.background {
+    background-color: rgba(0, 0, 0, 0.295);
+    width: 400px;
+    padding-left: 15px;
+}
+
+section.imagen-2 {
+    background-color: black;
+    background-image: url("../imagens/background002.jpg");
+    color: aliceblue;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    text-shadow: 4px 3px 0px rgba(0, 0, 0, 0.308);
 }
 
 section p {
@@ -38,4 +108,6 @@ footer {
     background-color: black;
     color: white;
     text-align: center;
+    padding: 10px;
+    font-size: 20px;
 }
